@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <style>
+    body{
+      margin: 15px;
+      
+    }
+    input.ch{
+      width: 25px;
+      height: 25px;
+      
+    }
+    input#rt{
+      width: 20px;
+      height: 20px;
+    }
+    #bt{
+      padding: 5px;
+    }
+     #st{
+      padding: 5px;
+    }
+        #it{
+      padding: 5px;
+    }
+    h5{
+      color: lightgreen;
+    }
+    #left{
+      
+    }
+    #hs{
+      padding: 6px;
+    } 
+    h1 {
+        color: green;
+    }
+           
+    /* toggle in label designing */
+     .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 24px;
+   }
+   .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+   }
+   span {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+   }
+   span:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 40 px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+   }
+   input:checked + span {
+      background-color: lightblue;
+   }
+   input:focus + span {
+      box-shadow: 0 0 1px lightgreen;
+   }
+   input:checked + span:before {
+      transform: translateX(26px);
+   }
+   span.round {
+      border-radius: 34px;
+   }
+   span.round:before {
+      border-radius: 50%;
+   }
+   #al{
+     padding: 6px;
+     margin-right: 10px;
+   }
+       #c{
+      padding: 5px;
+    }
+        #b{
+      padding: 5px;
+    }
+    #tx{
+      padding: 6px;
+    }
+  </style>
+  <div id="left">
+    
+  
+
+  <button type="submit" id="bt">Auto Headshot </button>
+  <input type="checkbox" name="" class="ch" id="chu" />
+  <h5 id="ik"></h5>
+  
+  <label for="vol">Headshot Rate</label>
+  <input type="range" min="0" max="10" id="vol"><br><br>
+  <input type="text" placeholder="Enter Headshot Rate " id="hs">
+  <button type="submit" id="st">Apply </button><h5 id="stt"></h5>
+<button type="submit" id="it">Esp & Antena📶 </button>
+<input type="radio" name="" id="rt">
+<button type="submit" id="al">Aimlock🔐</button><label class="switch">
+<input type="checkbox">
+<span class="round"></span>
+</label><br><br>
+<button type="submit" id="c">Aimbot⚂</button><input type="radio" name="" id="rt"> <button type="submit" id="b">100% Antiban⚠️</button><br><br><input type="text" id="tx" placeholder="Enter Aimbot Rate"> <button type="submit" id="st">Apply</button>
+
+ 
+
+  </div>
+</body>
+<script>
+document.getElementById('bt').onclick= e=>{
+  document.getElementById('ik').innerHTML = 'Done✅'
+}
+document.getElementById('st').onclick = function y(){
+  document.getElementById('stt').innerHTML = 'Applied✔️ ', document.getElementById('hs').value
+}
+document.getElementById('it').onclick = function n(){
+  alert('done⚠️')
+}
+document.getElementById('al').onclick = function l(){
+  alert('done⚠️')
+}
+document.getElementById('c').onclick = function n(){
+  alert('done⚠️')
+}
+document.getElementById('b').onclick = function n(){
+  alert('done⚠️')
+}
+</script>
+</html>
